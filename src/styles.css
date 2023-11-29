@@ -342,7 +342,7 @@ input.au-input.au-input-xl{
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-    border-right:1px solid #e5e5e5;
+    /* border-right:1px solid #e5e5e5; */
     position:relative;
     z-index:3
 }
@@ -748,7 +748,8 @@ a.primary-btn{
     color:#fff;
     border-radius:2px;
     font-size:14px;
-    margin-top:5px
+    margin-top:5px;
+    text-decoration: none;
 }
 a.primary-btn:hover{
     background:#0da8e4;
