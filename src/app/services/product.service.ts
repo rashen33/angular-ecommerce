@@ -16,9 +16,10 @@ export class ProductService {
   //Map the JSON data from Spring Data REST to product array
   getProductList(categoryId : number) : Observable<Product[]> {
 
-    //@TODO need to buld URL based on category id in the backend
+    //URL based on category id in the backend
+    const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${categoryId}`;
 
-    return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
+    return this.httpClient.get<GetResponse>(searchUrl).pipe(
       map(response => response._embedded.products)
     );
   }
