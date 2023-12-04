@@ -12,7 +12,7 @@ export class ProductService {
 
   constructor(private httpClient : HttpClient) { }
 
-  //Returns and observable
+  //Returns an observable
   //Map the JSON data from Spring Data REST to product array
   getProductList(categoryId : number) : Observable<Product[]> {
 

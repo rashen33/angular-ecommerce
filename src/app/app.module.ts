@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { RouterModule, Routes } from '@angular/router';
 
+//Defining the Routes
 const routes : Routes = [
   {path: 'category/:id', component : ProductListComponent},
   {path: 'category', component : ProductListComponent},
@@ -22,6 +23,7 @@ const routes : Routes = [
     ProductListComponent
   ],
   imports: [
+    //Configuring the Router
     RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
