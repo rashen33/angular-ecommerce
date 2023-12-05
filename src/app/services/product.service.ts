@@ -51,8 +51,6 @@ export class ProductService {
 }
 
 
-
-
 //Unwraps the JSON from Spring Data REST _embedded entry
 export interface GetResponseProducts{
   _embedded: {
